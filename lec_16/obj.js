@@ -1,4 +1,11 @@
 //singleton
+
+
+
+
+
+
+
 //object literals
 const user={
     name :"shrenik",
