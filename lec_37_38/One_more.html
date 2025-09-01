@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid#e73737;
+      }
+      .project {
+        background-color: #1c1c1c;
+        color: #ffffff;
+        background-color: #1c1c1c;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 50vh;
+        gap: 20px;
+      }
+
+      .color {
+        color: aliceblue;
+        display: flex;
+        flex-direction: row;
+      }
+      .button-group {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        button {
+          padding: 12px 32px;
+          margin: 0;
+          border-radius: 8px;
+          border: none;
+          background: linear-gradient(90deg, #e73737 0%, #ff7e5f 100%);
+          color: #fff;
+          font-size: 1rem;
+          font-weight: 600;
+          cursor: pointer;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+          transition: background 0.3s, transform 0.2s;
+        }
+        button:hover {
+          background: linear-gradient(90deg, #ff7e5f 0%, #e73737 100%);
+          transform: translateY(-2px) scale(1.05);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="project">
+      <div class="button-group">
+        <button id="Start">Start</button>
+        <button id="Stop">Stop</button>
+      </div>
+      <div id="insert">
+        <div class="key">Press and See the Magic</div>
+      </div>
+    </div>
+    <script src="async.js"></script>
+  </body>
+</html>
